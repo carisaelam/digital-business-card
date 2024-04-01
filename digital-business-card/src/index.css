@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1a1c21;
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.main {
+  background-color: #141519;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.info__title__group {
+  text-align: center;
+}
+
+.info__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  line-height: 1.75rem;
+}
+
+.info__subtitle {
+  font-size: 1.25rem;
+  color: #efb187;
+  margin-top: 0.25rem;
+}
+
+.info__website {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info__buttons button {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+}
+
+.info__buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 0 10px black;
+}
+
+.info__buttons button i {
+  margin-right: 0.25rem;
+}
+
+.info__button-email {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.info__button-email:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.info__button-linkedin {
+  background-color: hsl(216, 68%, 55%);
+  color: white;
+}
+
+.info__button-linkedin:hover {
+  background-color: hsl(216, 98%, 35%);
+  color: white;
+}
+
+.about,
+.interests {
+  padding: 0 1rem;
+}
+
+.about__title,
+.interests__title {
+  text-align: left;
+}
+
+.about__text,
+.interests__text {
+  line-height: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer__icon {
+  font-size: 2.5rem;
+}
+
+/* Stopped here....making it look better at larger sizes */
+@media (min-width: 32rem) {
+  html {
+    font-size: 20px;
+  }
+
+  .main {
+    max-width: 27rem;
+    line-height: 3rem;
+  }
+
+  .info__title {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .info__subtitle {
+    font-size: 1.8rem;
+  }
+
+  .info__website {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .info__buttons {
+    gap: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .info__buttons button {
+    padding: 0.3rem 2rem;
+  }
+
+  .about,
+  .interests {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2.5rem;
+  }
+
+  .about__text,
+  .interests__text {
+    line-height: 1.5rem;
+  }
+
+  .footer__icon {
+    font-size: 3.5rem;
+    margin: 0 0.5rem 2.5rem;
+  }
+}
